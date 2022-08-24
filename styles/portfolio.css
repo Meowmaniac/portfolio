@@ -1,10 +1,14 @@
+:root {
+  --primary-color: #893dff;
+}
+
 body {
   background-color: #292841;
 }
 
 .hero {
   color: rgb(255, 255, 255);
-  padding: 160px 0;
+  padding: 160px 0 100px 0;
 }
 
 .hero p {
@@ -22,7 +26,8 @@ body {
 }
 
 .btn-branding {
-  background: #893dff;
+  margin: 0 20px;
+  background: var(--primary-color);
   border-radius: 5;
   color: white;
   padding: 15px 40px;
@@ -30,6 +35,44 @@ body {
 }
 
 .btn-branding:hover {
-  border-color: #893dff;
-  color: #893dff;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-branding-outlined {
+  margin: 0 20px;
+  background: transparent;
+  border-radius: 5;
+  color: var(--primary-color);
+  padding: 15px 40px;
+  font-size: 20px;
+  border: 1px solid var(--primary-color);
+}
+
+.btn-branding-outlined:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.project-section {
+  margin-bottom: 60px;
+  color: white;
+}
+
+.project-section h2 {
+  font-size: 48px;
+  opacity: 1;
+  font-weight: 400;
+}
+
+.project-section p {
+  font-size: 18px;
+}
+.project-section a {
+  margin: 10px 0;
+}
+
+.project-section img {
+  border-radius: 10px;
 }
