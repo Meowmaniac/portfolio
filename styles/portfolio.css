@@ -99,4 +99,32 @@ footer a {
   .project-section {
     text-align: center;
   }
+  .about {
+    text-align: center;
+  }
+}
+
+.about {
+  color: white;
+  margin-top: 100px;
+}
+
+.about h1 {
+  font-size: 56px;
+}
+
+.about h2 {
+  font-size: 32px;
+}
+
+.about p {
+  font-size: 24px;
+}
+
+.about img {
+  border-radius: 15px;
+}
+
+.about a {
+  margin: 20px 0;
 }
