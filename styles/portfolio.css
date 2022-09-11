@@ -183,3 +183,7 @@ footer h4 {
 .social-links a:hover {
   color: var(--primary-color);
 }
+
+.content a {
+  text-decoration: none;
+}
