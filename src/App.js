@@ -1,206 +1,25 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "./portfolio.css";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Work from "./pages/Work";
+
 function App() {
   return (
-    <div className="App">
-      <nav className="navbar navbar-expand-md navbar-dark fixed-top">
-        <div className="container">
-          <a className="navbar-brand" href="/" title="Homepage">
-            <img
-              src="./images/logo.png"
-              alt="Katrin's logo"
-              className="logo img-fluid"
-            />
-            Katrin Pavlova
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="/"
-                  tilte="Homepage"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="about.html"
-                  title="About Katrin Pavlova"
-                >
-                  About me
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="work.html"
-                  title="Work Katrin Pavlova"
-                >
-                  Work
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="contact.html"
-                  title="Contact Katrin Pavlova"
-                >
-                  Contact me
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div className="container">
-        <div className="hero text-center">
-          <p>👋 Hi I am</p>
-          <h1>Katrin Pavlova</h1>
-          <h2 className="mb-5">🇳🇱 Front-end developer, based in Europe</h2>
-          <div>
-            <a
-              href="contact.html"
-              className="btn btn-branding"
-              title="Contact Katrin Pavlova"
-            >
-              Contact me
-            </a>
-            <a
-              href="about.html"
-              className="btn btn-branding-outlined"
-              title="About Katrin Pavlova"
-            >
-              About me
-            </a>
-          </div>
-        </div>
-        <div className="project-section">
-          <div className="row">
-            <div className="col-sm-6 d-none d-sm-block">
-              <img
-                src="./images/weather.png"
-                alt="Weather app preview"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-sm-6 col-xs-12">
-              <h2 className="text-md-left">Weather app</h2>
-              <p className="text-left">
-                I built this project during SheCodes workshop. It allows user to
-                search for the city to see the weather. This app shows current
-                temperature, wind speed, humidity, visibility and pressure.
-                There is also 6 days forecast.
-              </p>
-              <a
-                href="https://fantastic-florentine-458056.netlify.app/"
-                className="btn btn-branding"
-                title="Launch Weather App"
-              >
-                Launch Weather App
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="project-section">
-          <div className="row">
-            <div className="col-sm-6 col-xs-12">
-              <h2 className="text-md-left">Manga app</h2>
-              <p className="text-left">
-                This is a simple site about my hobby. It contains a short
-                description and the link to read more about this topic.
-              </p>
-              <a
-                href="work.html"
-                className="btn btn-branding"
-                title="Launch Manga App"
-              >
-                Launch Manga App
-              </a>
-            </div>
-            <div className="col-sm-6 d-none d-sm-block">
-              <img
-                src="./images/manga.png"
-                alt="Yoga App preview"
-                className="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-        <footer>
-          <div className="contact-box d-flex justify-content-between rounded d-none d-md-flex">
-            <div>
-              <h4>Work inquiry</h4>
-              <p className="text-muted m-0">Let's work together</p>
-            </div>
-            <div>
-              <a
-                href="contact.html"
-                className="btn btn-branding"
-                title="Contact Katrin Pavlova"
-              >
-                Contact me
-              </a>
-            </div>
-          </div>
-          <div className="text-center">
-            <a
-              href="mailto:katrin@mail.com"
-              className="email-link"
-              title="Email Katrin"
-            >
-              katrin@mail.com
-            </a>
-            <div className="social-links">
-              <a
-                href="http://github.com/meowmeow"
-                target="_blank"
-                title="Github profile"
-              >
-                <i className="fa-brands fa-github"></i>
-              </a>
-              <a
-                href="http://instagram.com/meowmeow"
-                target="_blank"
-                title="Instagram profile"
-              >
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-              <a
-                href="http://twitter.com/meowmeow"
-                target="_blank"
-                title="Twitter profile"
-              >
-                <i className="fa-brands fa-twitter"></i>
-              </a>
-            </div>
-          </div>
-
-          <p className="text-center">
-            <a href="https://github.com/Meowmaniac/portfolio" alt="Source code">
-              Open source code
-            </a>
-            by Katrin Pavlova
-          </p>
-        </footer>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="work" element={<Work />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
