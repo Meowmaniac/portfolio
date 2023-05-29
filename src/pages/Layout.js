@@ -1,19 +1,15 @@
 import { Outlet, Link } from "react-router-dom";
+import logo from "../images/logo.png";
 
 export default function Layout() {
   return (
     <>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="/" title="Homepage">
-            <img
-              src="images/logo.png"
-              alt="Katrin's logo"
-              class="logo img-fluid"
-            />
+          <Link class="navbar-brand" to="/">
+            <img src={logo} alt="Katrin's logo" class="logo img-fluid" />
             Katrin Pavlova
-          </a>
-          <Link>Katrin Pavlova</Link>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"
@@ -51,24 +47,6 @@ export default function Layout() {
           </div>
         </div>
       </nav>
-
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/work">Work</Link>
-          </li>
-        </ul>
-      </nav>
-
       <Outlet />
     </>
   );
