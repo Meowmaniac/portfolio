@@ -10,31 +10,31 @@ class Contact extends React.Component {
             <h3>Email</h3>
             <p>
               <a
-                href="mailto:katrin@mail.com"
+                href="mailto:evil.cat.software@gmail.com"
                 target="_blank"
                 title="Email Katrin"
               >
-                katrin@mail.com
+                evil.cat.software@gmail.com
               </a>
             </p>
-            <h3>Twitter</h3>
+            <h3>LinkedIn</h3>
             <p>
               <a
-                href="http://twitter.com/meowmeow"
+                href="https://www.linkedin.com/in/katrin-pavlova/"
                 target="_blank"
-                title="Twitter profile"
+                title="LinkedIn profile"
               >
-                @meowmeow
+                Katrin Pavlova
               </a>
             </p>
-            <h3>Instagram</h3>
+            <h3>Telegram</h3>
             <p>
               <a
-                href="http://instagram.com/meowmeow"
+                href="https://t.me/Meowmaniac"
                 target="_blank"
-                title="Instagram profile"
+                title="Telegram profile"
               >
-                @katrinmeow
+                @Meowmaniac
               </a>
             </p>
           </div>

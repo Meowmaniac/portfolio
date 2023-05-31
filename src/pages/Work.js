@@ -1,4 +1,7 @@
 import React from "react";
+import weather from "../images/weather.png";
+import manga from "../images/manga.png";
+import yoga from "../images/yoga.png";
 
 class Work extends React.Component {
   render() {
@@ -10,7 +13,7 @@ class Work extends React.Component {
             <div className="row">
               <div className="col-md-6">
                 <img
-                  src="images/manga.png"
+                  src={manga}
                   alt="Manga App preview"
                   className="img-fluid"
                 />
@@ -19,7 +22,7 @@ class Work extends React.Component {
               </div>
               <div className="col-md-6">
                 <img
-                  src="images/weather.png"
+                  src={weather}
                   alt="Weather App preview"
                   className="img-fluid"
                 />
@@ -29,11 +32,7 @@ class Work extends React.Component {
             </div>
             <div className="row">
               <div className="col-md-6">
-                <img
-                  src="images/yoga.png"
-                  alt="Yoga App preview"
-                  className="img-fluid"
-                />
+                <img src={yoga} alt="Yoga App preview" className="img-fluid" />
                 <h3>Yoga Project</h3>
                 <p>Built with HTML and CSS</p>
               </div>

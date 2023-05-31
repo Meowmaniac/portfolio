@@ -111,14 +111,14 @@ class Home extends React.Component {
                 <a
                   href="https://www.linkedin.com/in/katrin-pavlova/"
                   target="_blank"
-                  title="Instagram profile"
+                  title="LinkedIn profile"
                 >
                   <i className="fa-brands fa-linkedin"></i>
                 </a>
                 <a
                   href="https://t.me/Meowmaniac"
                   target="_blank"
-                  title="Twitter profile"
+                  title="Telegram message"
                 >
                   <i className="fa-brands fa-telegram"></i>
                 </a>
@@ -128,10 +128,11 @@ class Home extends React.Component {
             <p className="text-center">
               <a
                 href="https://github.com/Meowmaniac/portfolio"
+                target="_blank"
                 alt="Source code"
               >
                 Open source code
-              </a>
+              </a>{" "}
               by Katrin Pavlova
             </p>
           </footer>

@@ -1,4 +1,5 @@
 import React from "react";
+import photo from "../images/me.jpg";
 
 class About extends React.Component {
   render() {
@@ -16,7 +17,7 @@ class About extends React.Component {
                 of coding practice.
               </p>
               <a
-                href="work.html"
+                href="/work"
                 className="btn btn-branding"
                 title="Work of Katrin Pavlova"
               >
@@ -25,7 +26,7 @@ class About extends React.Component {
             </div>
             <div className="col-lg-6 col-sm-12">
               <img
-                src="images/me.jpg"
+                src={photo}
                 alt="Photo of Katrin Pavlova"
                 className="img-fluid"
               />
