@@ -1,4 +1,6 @@
 import React from "react";
+import weather from "../images/weather.png";
+import manga from "../images/manga.png";
 
 class Home extends React.Component {
   render() {
@@ -11,14 +13,14 @@ class Home extends React.Component {
             <h2 className="mb-5">🇳🇱 Front-end developer, based in Europe</h2>
             <div>
               <a
-                href="contact.html"
+                href="/contact"
                 className="btn btn-branding"
                 title="Contact Katrin Pavlova"
               >
                 Contact me
               </a>
               <a
-                href="about.html"
+                href="/about"
                 className="btn btn-branding-outlined"
                 title="About Katrin Pavlova"
               >
@@ -30,7 +32,7 @@ class Home extends React.Component {
             <div className="row">
               <div className="col-sm-6 d-none d-sm-block">
                 <img
-                  src="./images/weather.png"
+                  src={weather}
                   alt="Weather app preview"
                   className="img-fluid"
                 />
@@ -44,7 +46,7 @@ class Home extends React.Component {
                   pressure. There is also 6 days forecast.
                 </p>
                 <a
-                  href="https://fantastic-florentine-458056.netlify.app/"
+                  href="https://glittering-churros-17bae8.netlify.app/"
                   className="btn btn-branding"
                   title="Launch Weather App"
                 >
@@ -70,11 +72,7 @@ class Home extends React.Component {
                 </a>
               </div>
               <div className="col-sm-6 d-none d-sm-block">
-                <img
-                  src="./images/manga.png"
-                  alt="Yoga App preview"
-                  className="img-fluid"
-                />
+                <img src={manga} alt="Yoga App preview" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -86,7 +84,7 @@ class Home extends React.Component {
               </div>
               <div>
                 <a
-                  href="contact.html"
+                  href="/contact"
                   className="btn btn-branding"
                   title="Contact Katrin Pavlova"
                 >
@@ -96,33 +94,33 @@ class Home extends React.Component {
             </div>
             <div className="text-center">
               <a
-                href="mailto:katrin@mail.com"
+                href="mailto:evil.cat.software@gmail.com"
                 className="email-link"
                 title="Email Katrin"
               >
-                katrin@mail.com
+                evil.cat.software@gmail.com
               </a>
               <div className="social-links">
                 <a
-                  href="http://github.com/meowmeow"
+                  href="https://github.com/Meowmaniac"
                   target="_blank"
                   title="Github profile"
                 >
                   <i className="fa-brands fa-github"></i>
                 </a>
                 <a
-                  href="http://instagram.com/meowmeow"
+                  href="https://www.linkedin.com/in/katrin-pavlova/"
                   target="_blank"
                   title="Instagram profile"
                 >
-                  <i className="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-linkedin"></i>
                 </a>
                 <a
-                  href="http://twitter.com/meowmeow"
+                  href="https://t.me/Meowmaniac"
                   target="_blank"
                   title="Twitter profile"
                 >
-                  <i className="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-telegram"></i>
                 </a>
               </div>
             </div>
